@@ -1,0 +1,99 @@
+# .gitignore for .NET projects
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Test results
+TestResults/
+*.trx
+
+# Publish output
+publish/
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Local secrets
+secrets.json
+appsettings.Development.json
+
+# Others
+*.swp
+*.bak
+*.tmp
+
+# Python specifics
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+.env
+.venv
+env/
+venv/
+ENV/
+ENV*/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.cache/
+.pyre/
+.pytype/
+.dmypy.json
+*.sqlite3
+*.db
+*.pot
+*.mo
+*.log
+*.coverage
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+*.~ 

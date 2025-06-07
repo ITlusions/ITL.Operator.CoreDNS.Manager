@@ -1,0 +1,29 @@
+apiVersion: itlusions.io/v1
+kind: DNSZone
+metadata:
+  name: example-zone
+  namespace: default
+spec:
+  zone: example.com
+  records:
+    - type: A
+      name: www
+      value: 192.168.1.1
+      ttl: 300
+    - type: CNAME
+      name: blog
+      value: www.example.com
+      ttl: 300
+    - type: MX
+      name: "@"
+      value: mail.example.com
+      priority: 10
+      ttl: 3600
+    - type: TXT
+      name: "@"
+      value: "v=spf1 include:example.com ~all"
+      ttl: 3600
+    - type: AAAA
+      name: ipv6
+      value: 2001:db8::1
+      ttl: 300

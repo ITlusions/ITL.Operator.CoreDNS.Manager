@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dns-operator
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dns-operator
+  template:
+    metadata:
+      labels:
+        app: dns-operator
+    spec:
+      serviceAccountName: dns-operator
+      containers:
+      - name: dns-operator
+        image: your-registry/dns-operator:latest
+        imagePullPolicy: Always

@@ -1,0 +1,12 @@
+apiVersion: itlusions.io/v1
+kind: DNSZone
+metadata:
+  name: example-zone
+  namespace: default
+spec:
+  zone: example.com
+  records:
+    - type: A
+      name: www
+      value: 192.168.1.1
+      ttl: 300
