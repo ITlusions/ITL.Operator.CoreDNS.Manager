@@ -131,3 +131,12 @@ kubectl delete -f crd_dnszone.yaml
 ## Notes
 - Ensure that the CoreDNS deployment is configured to use the ConfigMap managed by this operator.
 - The operator is designed to work with Kubernetes clusters where CoreDNS is the DNS provider.
+
+
+---
+<br>
+
+
+**Niels Weistra** at **n.weistra@itlusions.com**.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://nl.linkedin.com/in/nielswei)

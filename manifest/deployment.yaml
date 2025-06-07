@@ -18,3 +18,10 @@ spec:
       - name: dns-operator
         image: your-registry/dns-operator:latest
         imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+          limits:
+            cpu: 100m
+            memory: 128Mi
